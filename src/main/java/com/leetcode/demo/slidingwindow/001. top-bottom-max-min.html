@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Stream API: Top/Bottom Challenges</title>
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --primary: #4f46e5;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent-1: #3b82f6;
+            --accent-2: #10b981;
+            --accent-3: #f59e0b;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .level-section {
+            margin-bottom: 40px;
+        }
+
+        .level-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .level-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .badge-1 { background: var(--accent-2); }
+        .badge-2 { background: var(--accent-1); }
+        .badge-3 { background: var(--accent-3); }
+
+        .question-grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        .question-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .question-card:hover {
+            transform: translateX(5px);
+            border-left-color: var(--primary);
+        }
+
+        .q-title {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .q-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .note-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            color: #be185d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Mastering Java Streams</h1>
+        <p class="subtitle">20 Programming Challenges for Top/Bottom & Max/Min Patterns</p>
+    </header>
+
+    <!-- Level 1 -->
+    <section class="level-section">
+        <div class="level-header">
+            <span class="level-badge badge-1">Level 1</span>
+            <h2>Basic (Primitives & Strings)</h2>
+        </div>
+        <div class="question-grid">
+            <div class="question-card">
+                <span class="q-title">01. Top 3 Numbers</span>
+                <span class="q-desc">Find the 3 largest integers in a list.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">02. Smallest 5</span>
+                <span class="q-desc">Find the 5 smallest doubles in a list.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">03. Longest String</span>
+                <span class="q-desc">Find the single longest string in a list of names.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">04. Bottom 3 Alphabetical</span>
+                <span class="q-desc">Get the first 3 strings when sorted alphabetically.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">05. Unique Top 5</span>
+                <span class="q-desc">Get the 5 highest unique numbers, effectively handling duplicates.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Level 2 -->
+    <section class="level-section">
+        <div class="level-header">
+            <span class="level-badge badge-2">Level 2</span>
+            <h2>Intermediate (Custom Classes)</h2>
+        </div>
+        <div class="note-box">
+            <strong>Context:</strong> Use a <code>Product(name, price, rating)</code> or <code>Employee(name, age, salary)</code> class for these challenges.
+        </div>
+        <div class="question-grid">
+            <div class="question-card">
+                <span class="q-title">06. Highest Paid</span>
+                <span class="q-desc">Find the Employee with the maximum salary.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">07. Top 5 Earners</span>
+                <span class="q-desc">List the top 5 Employee objects by salary.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">08. Youngest Employee</span>
+                <span class="q-desc">Find the Employee with the minimum age.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">09. Budget Picks</span>
+                <span class="q-desc">Get the 10 cheapest Product objects.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">10. Premium Products</span>
+                <span class="q-desc">Get the 3 products with the highest rating.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">11. Alphabetical First</span>
+                <span class="q-desc">Find the Employee whose name comes first in the dictionary.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">12. Most Recent Hire</span>
+                <span class="q-desc">If Employee has a <code>LocalDate hireDate</code>, find the person hired last.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Level 3 -->
+    <section class="level-section">
+        <div class="level-header">
+            <span class="level-badge badge-3">Level 3</span>
+            <h2>Advanced (Logic & Edge Cases)</h2>
+        </div>
+        <div class="question-grid">
+            <div class="question-card">
+                <span class="q-title">13. Second Highest</span>
+                <span class="q-desc">Find the 2nd highest salary (Tip: use <code>skip(1)</code>).</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">14. Top 3 by Name Length</span>
+                <span class="q-desc">Find the 3 employees with the longest names.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">15. Lowest Non-Zero</span>
+                <span class="q-desc">Find the lowest price that is strictly greater than zero.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">16. Tied Max</span>
+                <span class="q-desc">Find the oldest person; if ages are equal, pick the one with the higher salary.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">17. Top 5 Distinct Prices</span>
+                <span class="q-desc">Get the top 5 most expensive products, but ensure no two products have the same price.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">18. Top 10%</span>
+                <span class="q-desc">In a list of 100 items, find the top 10 using dynamic limiting.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">19. Min Rating with Stock</span>
+                <span class="q-desc">Find the lowest-rated product that is currently "in stock" (use filter).</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">20. Last 3 Alphabetical</span>
+                <span class="q-desc">Find the 3 names that appear last in alphabetical order, returned in descending order.</span>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
