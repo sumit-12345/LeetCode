@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,9 +69,17 @@
             color: white;
         }
 
-        .badge-1 { background: var(--accent-2); }
-        .badge-2 { background: var(--accent-1); }
-        .badge-3 { background: var(--accent-3); }
+        .badge-1 {
+            background: var(--accent-2);
+        }
+
+        .badge-2 {
+            background: var(--accent-1);
+        }
+
+        .badge-3 {
+            background: var(--accent-3);
+        }
 
         .question-grid {
             display: grid;
@@ -121,127 +130,301 @@
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <header>
-        <h1>Mastering Java Streams</h1>
-        <p class="subtitle">20 Programming Challenges for Top/Bottom & Max/Min Patterns</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Mastering Java Streams</h1>
+            <p class="subtitle">20 Programming Challenges for Top/Bottom & Max/Min Patterns</p>
+        </header>
 
-    <!-- Level 1 -->
-    <section class="level-section">
-        <div class="level-header">
-            <span class="level-badge badge-1">Level 1</span>
-            <h2>Basic (Primitives & Strings)</h2>
-        </div>
-        <div class="question-grid">
-            <div class="question-card">
-                <span class="q-title">01. Top 3 Numbers</span>
-                <span class="q-desc">Find the 3 largest integers in a list.</span>
+        <!-- Level 1 -->
+        <section class="level-section">
+            <div class="level-header">
+                <span class="level-badge badge-1">Level 1</span>
+                <h2>Basic (Primitives & Strings)</h2>
             </div>
-            <div class="question-card">
-                <span class="q-title">02. Smallest 5</span>
-                <span class="q-desc">Find the 5 smallest doubles in a list.</span>
+            <div class="question-grid">
+                <div class="question-card">
+                    <span class="q-title">01. Top 3 Numbers</span>
+                    <span class="q-desc">Find the 3 largest integers in a list.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">02. Smallest 5</span>
+                    <span class="q-desc">Find the 5 smallest doubles in a list.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">03. Longest String</span>
+                    <span class="q-desc">Find the single longest string in a list of names.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">04. Bottom 3 Alphabetical</span>
+                    <span class="q-desc">Get the first 3 strings when sorted alphabetically.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">05. Unique Top 5</span>
+                    <span class="q-desc">Get the 5 highest unique numbers, effectively handling duplicates.</span>
+                </div>
             </div>
-            <div class="question-card">
-                <span class="q-title">03. Longest String</span>
-                <span class="q-desc">Find the single longest string in a list of names.</span>
-            </div>
-            <div class="question-card">
-                <span class="q-title">04. Bottom 3 Alphabetical</span>
-                <span class="q-desc">Get the first 3 strings when sorted alphabetically.</span>
-            </div>
-            <div class="question-card">
-                <span class="q-title">05. Unique Top 5</span>
-                <span class="q-desc">Get the 5 highest unique numbers, effectively handling duplicates.</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Level 2 -->
-    <section class="level-section">
-        <div class="level-header">
-            <span class="level-badge badge-2">Level 2</span>
-            <h2>Intermediate (Custom Classes)</h2>
-        </div>
-        <div class="note-box">
-            <strong>Context:</strong> Use a <code>Product(name, price, rating)</code> or <code>Employee(name, age, salary)</code> class for these challenges.
-        </div>
-        <div class="question-grid">
-            <div class="question-card">
-                <span class="q-title">06. Highest Paid</span>
-                <span class="q-desc">Find the Employee with the maximum salary.</span>
+        <!-- Level 2 -->
+        <section class="level-section">
+            <div class="level-header">
+                <span class="level-badge badge-2">Level 2</span>
+                <h2>Intermediate (Custom Classes)</h2>
             </div>
-            <div class="question-card">
-                <span class="q-title">07. Top 5 Earners</span>
-                <span class="q-desc">List the top 5 Employee objects by salary.</span>
+            <div class="note-box">
+                <strong>Context:</strong> Use a <code>Product(name, price, rating)</code> or
+                <code>Employee(name, age, salary)</code> class for these challenges.
             </div>
-            <div class="question-card">
-                <span class="q-title">08. Youngest Employee</span>
-                <span class="q-desc">Find the Employee with the minimum age.</span>
+            <div class="question-grid">
+                <div class="question-card">
+                    <span class="q-title">06. Highest Paid</span>
+                    <span class="q-desc">Find the Employee with the maximum salary.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">07. Top 5 Earners</span>
+                    <span class="q-desc">List the top 5 Employee objects by salary.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">08. Youngest Employee</span>
+                    <span class="q-desc">Find the Employee with the minimum age.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">09. Budget Picks</span>
+                    <span class="q-desc">Get the 10 cheapest Product objects.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">10. Premium Products</span>
+                    <span class="q-desc">Get the 3 products with the highest rating.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">11. Alphabetical First</span>
+                    <span class="q-desc">Find the Employee whose name comes first in the dictionary.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">12. Most Recent Hire</span>
+                    <span class="q-desc">If Employee has a <code>LocalDate hireDate</code>, find the person hired
+                        last.</span>
+                </div>
             </div>
-            <div class="question-card">
-                <span class="q-title">09. Budget Picks</span>
-                <span class="q-desc">Get the 10 cheapest Product objects.</span>
-            </div>
-            <div class="question-card">
-                <span class="q-title">10. Premium Products</span>
-                <span class="q-desc">Get the 3 products with the highest rating.</span>
-            </div>
-            <div class="question-card">
-                <span class="q-title">11. Alphabetical First</span>
-                <span class="q-desc">Find the Employee whose name comes first in the dictionary.</span>
-            </div>
-            <div class="question-card">
-                <span class="q-title">12. Most Recent Hire</span>
-                <span class="q-desc">If Employee has a <code>LocalDate hireDate</code>, find the person hired last.</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Level 3 -->
-    <section class="level-section">
-        <div class="level-header">
-            <span class="level-badge badge-3">Level 3</span>
-            <h2>Advanced (Logic & Edge Cases)</h2>
-        </div>
-        <div class="question-grid">
+        <!-- Level 3 -->
+        <section class="level-section">
+            <div class="level-header">
+                <span class="level-badge badge-3">Level 3</span>
+                <h2>Advanced (Logic & Edge Cases)</h2>
+            </div>
+            <div class="question-grid">
+                <div class="question-card">
+                    <span class="q-title">13. Second Highest</span>
+                    <span class="q-desc">Find the 2nd highest salary (Tip: use <code>skip(1)</code>).</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">14. Top 3 by Name Length</span>
+                    <span class="q-desc">Find the 3 employees with the longest names.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">15. Lowest Non-Zero</span>
+                    <span class="q-desc">Find the lowest price that is strictly greater than zero.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">16. Tied Max</span>
+                    <span class="q-desc">Find the oldest person; if ages are equal, pick the one with the higher
+                        salary.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">17. Top 5 Distinct Prices</span>
+                    <span class="q-desc">Get the top 5 most expensive products, but ensure no two products have the same
+                        price.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">18. Top 10%</span>
+                    <span class="q-desc">In a list of 100 items, find the top 10 using dynamic limiting.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">19. Min Rating with Stock</span>
+                    <span class="q-desc">Find the lowest-rated product that is currently "in stock" (use filter).</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">20. Last 3 Alphabetical</span>
+                    <span class="q-desc">Find the 3 names that appear last in alphabetical order, returned in descending
+                        order.</span>
+                </div>
+            </div>
+        </section>
+        <!-- Level 4 (New: Group By Section) -->
+        <section class="level-section">
+            <div class="level-header">
+                <span class="level-badge badge-4">Level 4</span>
+                <h2 id="groupBy">Group By Pattern</h2>
+            </div>
+            <div class="note-box">
+                <strong>Key Tool:</strong> <code>Collectors.groupingBy()</code>. Think of this as the SQL
+                <code>GROUP BY</code> clause for Java collections.
+            </div>
+            <!-- Questions 21-30: Initial Set -->
             <div class="question-card">
-                <span class="q-title">13. Second Highest</span>
-                <span class="q-desc">Find the 2nd highest salary (Tip: use <code>skip(1)</code>).</span>
+                <span class="q-title">21. Departmental Directory</span>
+                <span class="q-desc">Group a list of <code>Employee</code> objects by their
+                    <code>department</code>.</span>
             </div>
             <div class="question-card">
-                <span class="q-title">14. Top 3 by Name Length</span>
-                <span class="q-desc">Find the 3 employees with the longest names.</span>
+                <span class="q-title">22. Item Frequency</span>
+                <span class="q-desc">Count the number of times each <code>String</code> appears in a list (e.g., Apple:
+                    3, Banana: 2).</span>
             </div>
             <div class="question-card">
-                <span class="q-title">15. Lowest Non-Zero</span>
-                <span class="q-desc">Find the lowest price that is strictly greater than zero.</span>
+                <span class="q-title">23. Average Salary by Dept</span>
+                <span class="q-desc">Group employees by <code>department</code> and calculate the <strong>average
+                        salary</strong> for each.</span>
             </div>
             <div class="question-card">
-                <span class="q-title">16. Tied Max</span>
-                <span class="q-desc">Find the oldest person; if ages are equal, pick the one with the higher salary.</span>
+                <span class="q-title">24. Status Mapping</span>
+                <span class="q-desc">Group <code>Order</code> objects by <code>status</code>, but the map value should
+                    be a <code>List&lt;Long&gt;</code> of <strong>order IDs</strong> only.</span>
             </div>
             <div class="question-card">
-                <span class="q-title">17. Top 5 Distinct Prices</span>
-                <span class="q-desc">Get the top 5 most expensive products, but ensure no two products have the same price.</span>
+                <span class="q-title">25. Top Performer per Dept</span>
+                <span class="q-desc">Group employees by <code>department</code> and find the
+                    <strong>highest-paid</strong> person in each group.</span>
             </div>
             <div class="question-card">
-                <span class="q-title">18. Top 10%</span>
-                <span class="q-desc">In a list of 100 items, find the top 10 using dynamic limiting.</span>
+                <span class="q-title">26. Price Summary</span>
+                <span class="q-desc">Group <code>Product</code> objects by <code>category</code> and return
+                    <code>DoubleSummaryStatistics</code> (sum, min, max, avg) for each.</span>
             </div>
             <div class="question-card">
-                <span class="q-title">19. Min Rating with Stock</span>
-                <span class="q-desc">Find the lowest-rated product that is currently "in stock" (use filter).</span>
+                <span class="q-title">27. Partitioning Even/Odd</span>
+                <span class="q-desc">Divide a list of integers into two groups: one for <strong>even</strong> numbers
+                    and one for <strong>odd</strong> numbers.</span>
             </div>
             <div class="question-card">
-                <span class="q-title">20. Last 3 Alphabetical</span>
-                <span class="q-desc">Find the 3 names that appear last in alphabetical order, returned in descending order.</span>
+                <span class="q-title">28. Group by Name Length</span>
+                <span class="q-desc">Given a list of names, group them by the <strong>number of characters</strong> they
+                    contain.</span>
             </div>
-        </div>
-    </section>
-</div>
+            <div class="question-card">
+                <span class="q-title">29. Revenue by Region</span>
+                <span class="q-desc">Group <code>SalesRecord</code> objects by <code>region</code> and calculate the
+                    <strong>total revenue</strong> (sum) for each region.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">30. Multi-Level Grouping</span>
+                <span class="q-desc">Group employees by <code>department</code>, and then further group them by
+                    <code>jobRole</code> within that department.</span>
+            </div>
+
+            <!-- Questions 31-40: Intermediate Set -->
+            <div class="question-card">
+                <span class="q-title">31. Name Concatenation</span>
+                <span class="q-desc">Group employees by <code>department</code> and return a Map where the value is a
+                    <strong>Comma-Separated String</strong> of all names in that dept.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">32. Score Classification</span>
+                <span class="q-desc">Classify a list of integers into "Pass" (>=60) or "Fail" (&lt;60) and store the
+                    results in a <code>Map&lt;String, List&lt;Integer&gt;&gt;</code>.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">33. Unique Values per Group</span>
+                <span class="q-desc">Group <code>Employee</code> objects by <code>department</code>, but ensure the
+                    resulting values are a <strong>Set of Names</strong> to remove duplicates.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">34. Boolean Counting</span>
+                <span class="q-desc">Partition a list of employees by their "Active" status and return a
+                    <code>Map&lt;Boolean, Long&gt;</code> containing the <strong>count</strong> of each.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">35. Most Frequent Character</span>
+                <span class="q-desc">Find the <strong>character with the highest frequency</strong> in a given
+                    <code>String</code> using grouping and sorting.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">36. Monthly Transaction Total</span>
+                <span class="q-desc">Group <code>Transactions</code> by their <code>Month</code> and calculate the
+                    <strong>total amount spent</strong> per month.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">37. Conditional Grouping (Filtering)</span>
+                <span class="q-desc">Group employees by <code>department</code>, but only include those with
+                    <strong>more than 5 years of service</strong> in the lists.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">38. Alphabetical TreeMap</span>
+                <span class="q-desc">Group items by category and ensure the result is stored in a
+                    <strong>TreeMap</strong> so keys are automatically sorted.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">39. Youngest per Department</span>
+                <span class="q-desc">Group employees by <code>department</code> and return the <strong>single youngest
+                        employee</strong> for each group.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">40. Nested Average Calculation</span>
+                <span class="q-desc">Group orders by <code>Year</code> and then <code>Quarter</code>, calculating the
+                    <strong>Average Order Price</strong> for each nested group.</span>
+            </div>
+
+            <!-- Questions 41-50: Advanced Set -->
+            <div class="question-card">
+                <span class="q-title">41. Group by Custom Logic</span>
+                <span class="q-desc">Group a list of words by their <strong>first character</strong>, converting the
+                    keys to <strong>uppercase</strong>.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">42. Salary Range Buckets</span>
+                <span class="q-desc">Group employees into salary buckets: "Low" (&lt;30k), "Mid" (30k-70k), and "High"
+                    (>70k).</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">43. Multi-Value Mapping</span>
+                <span class="q-desc">Group <code>Students</code> by <code>Grade</code>, but map the values to a
+                    <code>List</code> containing only their <strong>Phone Numbers</strong>.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">44. Partitioning with Summing</span>
+                <span class="q-desc">Partition a list of <code>Invoices</code> into "Paid" and "Unpaid" and calculate
+                    the <strong>total sum</strong> for each partition.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">45. Grouping by Multiple Fields</span>
+                <span class="q-desc">Create a key by concatenating <code>department</code> and <code>city</code>, then
+                    group employees by this <strong>composite key</strong>.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">46. Most Populated Category</span>
+                <span class="q-desc">Group <code>Products</code> by <code>category</code> and return only the
+                    <strong>name of the category</strong> that has the most items.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">47. Collectors.teeing Example</span>
+                <span class="q-desc">Group a list of numbers and find both the <strong>sum and average</strong> in a
+                    single grouping operation.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">48. Grouping Null Values</span>
+                <span class="q-desc">Group a list of Strings, but ensure that any <strong>null values</strong> are
+                    collected into a group with the key "UNKNOWN".</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">49. Date-Based Partitioning</span>
+                <span class="q-desc">Partition a list of <code>Events</code> into "Upcoming" and "Past" based on the
+                    <strong>current system date</strong>.</span>
+            </div>
+            <div class="question-card">
+                <span class="q-title">50. Reducing inside Groups</span>
+                <span class="q-desc">Group employees by <code>department</code> and use <code>reducing</code> to find
+                    the <strong>total number of years</strong> the group has worked combined.</span>
+            </div>
+
+        </section>
+    </div>
 
 </body>
+
 </html>
