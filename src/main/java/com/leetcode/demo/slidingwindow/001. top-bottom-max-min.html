@@ -423,6 +423,220 @@
             </div>
 
         </section>
+        <section class="level-section">
+            <div class="level-header">
+                <span class="level-badge badge-5">Level 5</span>
+                <h2>Advanced Stream Challenges</h2>
+            </div>
+            <div class="question-grid">
+                <!-- Question 01 -->
+                <div class="question-card">
+                    <span class="q-title">01. Departmental Spending</span>
+                    <span class="q-desc">Given a list of <strong>Employee</strong> objects with department and salary, find the <strong>sum of salaries</strong> for a specific department.</span>
+                </div>
+
+                <!-- Question 02 -->
+                <div class="question-card">
+                    <span class="q-title">02. Weighted Grade Point Average</span>
+                    <span class="q-desc">Given a list of <strong>Course</strong> objects containing grade and credits, calculate the <strong>weighted average</strong> (Sum of [grade * credits] / Sum of credits).</span>
+                </div>
+
+                <!-- Question 03 -->
+                <div class="question-card">
+                    <span class="q-title">03. High-Value Transactions</span>
+                    <span class="q-desc">From a list of <strong>Order</strong> objects, find the <strong>average amount</strong> of all orders that exceed $500.</span>
+                </div>
+
+                <!-- Question 04 -->
+                <div class="question-card">
+                    <span class="q-title">04. Conditional Summing</span>
+                    <span class="q-desc">Given a list of <strong>Project</strong> objects with a budget and status, calculate the <strong>total budget</strong> of all projects marked "IN_PROGRESS".</span>
+                </div>
+
+                <!-- Question 05 -->
+                <div class="question-card">
+                    <span class="q-title">05. Nested Data Sum</span>
+                    <span class="q-desc">Given a list of <strong>Invoice</strong> objects (each containing a List&lt;Item&gt;), find the <strong>total sum</strong> of all items across all invoices using <code>flatMapToInt</code>.</span>
+                </div>
+
+                <!-- Question 06 -->
+                <div class="question-card">
+                    <span class="q-title">06. Optional Handling</span>
+                    <span class="q-desc">Calculate the <strong>average price</strong> of a Product list. If the list is empty, return a <strong>default value</strong> of 0.0 using <code>OptionalDouble</code>.</span>
+                </div>
+
+                <!-- Question 07 -->
+                <div class="question-card">
+                    <span class="q-title">07. Filtered Age Average</span>
+                    <span class="q-desc">From a list of <strong>User</strong> objects, calculate the <strong>average age</strong> specifically for users who have a verified email address.</span>
+                </div>
+
+                <!-- Question 08 -->
+                <div class="question-card">
+                    <span class="q-title">08. Tax Calculation</span>
+                    <span class="q-desc">Given a list of <strong>Service</strong> costs, calculate the <strong>total sum</strong> after applying a 15% tax increase to each individual service.</span>
+                </div>
+
+                <!-- Question 09 -->
+                <div class="question-card">
+                    <span class="q-title">09. Time-Based Summing</span>
+                    <span class="q-desc">Given a list of <strong>Workout</strong> sessions, find the <strong>total minutes</strong> spent exercising within the last 7 days.</span>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="question-card">
+                    <span class="q-title">10. The "Everything" Summary</span>
+                    <span class="q-desc">Use <code>IntStream.summaryStatistics()</code> on a list of Sale amounts to find the <strong>sum, average, max, and min</strong> in a single pass.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="level-section">
+            <div class="level-header">
+                <span class="level-badge badge-4">Level 4</span>
+                <h2>Filtering (The "Keep What You Need" Pattern)</h2>
+            </div>
+            <div class="question-grid">
+                <div class="question-card">
+                    <span class="q-title">01. Gmail Users</span>
+                    <span class="q-desc">Find all User objects where the emailAddress ends with "@gmail.com".</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">02. Username Starts with A</span>
+                    <span class="q-desc">Get a list of users whose username starts with the letter "A".</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">03. Null or Empty Contact</span>
+                    <span class="q-desc">Filter users who have a null or empty contact number.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">04. UserId Range</span>
+                    <span class="q-desc">Get all users with a userId between 100 and 500.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">05. Long Usernames</span>
+                    <span class="q-desc">Identify users whose username is longer than 15 characters.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">06. Missing @ Symbol</span>
+                    <span class="q-desc">Filter out any user who doesn't have an @ symbol in their email.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">07. Even UserIds</span>
+                    <span class="q-desc">Get a list of users whose userId is an even number.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">08. Country Code Filter</span>
+                    <span class="q-desc">Filter users where the contact starts with a specific country code (e.g., "+91").</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">09. Admin in Username</span>
+                    <span class="q-desc">Find users whose username contains the word "admin" (case-insensitive).</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">10. Test but Not Admin</span>
+                    <span class="q-desc">Get all users who have "test" in their email but are not "admin".</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="level-section">
+            <div class="level-header">
+                <span class="level-badge badge-4">Level 4</span>
+                <h2>Distinct (The "No Duplicates Allowed" Pattern)</h2>
+            </div>
+            <div class="question-grid">
+                <div class="question-card">
+                    <span class="q-title">11. Unique Email Domains</span>
+                    <span class="q-desc">Get a list of all unique email domains from the user list.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">12. Unique Area Codes</span>
+                    <span class="q-desc">Find all unique area codes from the contact field.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">13. Unique Usernames</span>
+                    <span class="q-desc">Get a list of unique usernames (to check for duplicates).</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">14. Unique First Names</span>
+                    <span class="q-desc">Extract all unique first names (assuming username is "First Last").</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">15. Unique Characters in Usernames</span>
+                    <span class="q-desc">Find all unique characters used across all usernames.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">16. Unique UserIds in Merged Lists</span>
+                    <span class="q-desc">Get the set of unique userId values present in a merged list of two datasets.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">17. Unique UserIds in Logs</span>
+                    <span class="q-desc">From a list of transaction logs, find the unique userIds that performed an action.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">18. Unique Contact Lengths</span>
+                    <span class="q-desc">Get a list of unique contact lengths (e.g., finding if some numbers are 10 digits vs 12).</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">19. Unique Top-Level Domains</span>
+                    <span class="q-desc">Find unique top-level domains (.com, .org, .in) from the emails.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">20. Unique Search Keywords</span>
+                    <span class="q-desc">From a list of search queries, get the unique keywords used by users.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="level-section">
+            <div class="level-header">
+                <span class="level-badge badge-4">Level 4</span>
+                <h2>Counting (The "Give Me the Stats" Pattern)</h2>
+            </div>
+            <div class="question-grid">
+                <div class="question-card">
+                    <span class="q-title">21. Verified Contacts</span>
+                    <span class="q-desc">Count how many users have a verified contact (not null).</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">22. UserId Greater than 1000</span>
+                    <span class="q-desc">Count the number of users whose userId is greater than 1000.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">23. Corporate Emails</span>
+                    <span class="q-desc">How many users are using a corporate email (not gmail/yahoo)?</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">24. Space in Username</span>
+                    <span class="q-desc">Count how many users have a space in their username.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">25. Exact 10-Digit Contacts</span>
+                    <span class="q-desc">Count how many users have a contact number exactly 10 digits long.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">26. Unique Email Addresses</span>
+                    <span class="q-desc">Count the number of unique email addresses in the system.</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">27. Username Matches Email</span>
+                    <span class="q-desc">Count how many users have the same username as their emailAddress (before the @).</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">28. Prime UserIds</span>
+                    <span class="q-desc">Count the number of users whose userId is a prime number (advanced logic).</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">29. Numeric Contacts</span>
+                    <span class="q-desc">How many users have a numeric contact field (ignoring "+" or "-")?</span>
+                </div>
+                <div class="question-card">
+                    <span class="q-title">30. Repeated Email Domains</span>
+                    <span class="q-desc">Count how many users have an email domain that appears more than once in the list.</span>
+                </div>
+            </div>
+        </section>
     </div>
 
 </body>
